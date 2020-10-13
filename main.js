@@ -38,7 +38,7 @@ client.once('ready', () => {
 
   client.on('message', message => {
 
-    if ((message.content.includes('bruh')) && (message.author.id !== '764964260316053595'))     {
+    if ((message.content.includes('bruh')) && (message.author.id !== process.env.BOT_ID))     {
       message.channel.send('bruh')
       console.log(`this has been a bruh moment at ${hours + ":" + minutes + ":" + seconds}`);
     }
